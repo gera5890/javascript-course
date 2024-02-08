@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*Metodo Filter
+        El metodo filter retorna un nuevo arreglo con los elementos que cumplen con la condicion de la funcion 
+        que se pasa como parametro, el array original No se modifica
+        */
+
+        const arreglo = [1,2,3,4,5,6];
+
+        /*filtrar los elementos pares*/
+        const arregloUno = arreglo.filter(elemento => elemento % 2 == 0);
+        console.log(arregloUno);
+
+
+        /*filtrar los elementos comprendidos entre el 2 y el 4*/
+        const entre = arreglo.filter(elemento => elemento > 1 && elemento < 5)
+        console.log(entre);
+
+        /*Filtrar a todas las personas que son menores de edad*/
+        const personas = [['Mario', 18],['Anuar', 7],['Marisol', 17],['Gerardo', 20],['Mariana', 10]]
+        const personasMen = personas.filter(elemento => elemento[1] < 18 );
+
+        console.log(personasMen);
+    </script>
+</body>
+</html>

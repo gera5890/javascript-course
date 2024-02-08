@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Crea un arreglo en el cual cada componente represente una crta de 
+        un mazo de naipes
+        */
+
+        let cartas = [
+            [2,"diamantes"],
+            [3,"corazones"],
+            [4,"trebol"],
+            [10,"picas"],
+            [9,"diamantes"],
+            [3,"picas"]
+        ];
+
+        let diamantes = 0;
+        let corazones = 0;
+        let treboles = 0;
+        let picas = 0;
+
+        for(const carta of cartas){
+            document.write(carta[0] + " - " + carta[1]);
+            switch(carta[1]){
+                case "diamantes":
+                    diamantes++
+                    break;
+                case "corazones":
+                    corazones++
+                    break;
+                case "trebol":
+                    treboles++
+                    break;
+                case "picas":
+                    picas++
+                    break;
+            }
+            document.write("<br>");
+        }
+
+        console.log(corazones);
+        console.log(picas);
+        console.log(diamantes);
+        console.log(treboles);
+    </script>
+</body>
+</html>

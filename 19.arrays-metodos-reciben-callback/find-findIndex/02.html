@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Se tiene un arreglo con los nombres y claves de usuarios;
+        */
+
+        const usuarios = [
+            ['gerardo', '65187'],
+            ['sahian', 'weefds'],
+            ['yef', 'werr'],
+            ['brian', 'rytnu'],
+            ['wachihuero', 'btw65'],
+        ];
+
+        /*Mediante el metodo findIndex recuperar el indice de la componente del arreglo usuarios
+        de nombre que ingresao por teclado
+        Mostrar la clave de dicho usuario
+        */
+        let name = prompt('Ingrese el nombre: ');
+
+        const pass = usuarios.findIndex(usuario => usuario[0] == name);
+        console.log(usuarios[pass][1]);
+    </script>
+</body>
+</html>

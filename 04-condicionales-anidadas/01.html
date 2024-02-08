@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /*
+    Confeccionar un programa que pida por teclado 3 notas de un alumno,
+    calcular promedio y mostrar lo siguiente:
+    si el promedio es mayor o igual a 7 aprobado
+    si el promedio es mayor o igual a 4 y menor que 7 regular
+    si el promedio es menor que 4 reprobado
+    */
+
+    let numberOne = parseInt(prompt("Ingrese el primer valor"));
+    let numberTwo = parseInt(prompt("Ingrese el segundo valor"));
+    let numberThree = parseInt(prompt("Ingrese el tercer valor"));
+
+    const promedio = (numberOne + numberTwo + numberThree) / 3;
+    if(promedio >= 7 ){
+        document.write("Aprobado")
+    }else if(promedio >= 4 && promedio < 7){
+        document.write("Regular");
+    }else{
+        document.write("Reprobado");
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Definir dos funciones , la primera recibe como parametro
+        un arreglo vacio, en el mismo se deben cargar 5 elementos por teclado
+        La segunda funcion debe imprimir el arreglo
+        */
+
+        let arreglo = [];
+
+        function fillArray(arreglo){
+            for(let i = 0; i < 5; i++){
+                let valor = parseInt(prompt("Ingrese el valor: "))
+                arreglo.push(valor);
+            }
+        }
+
+        function getValues(arreglo){
+            for(let elements of arreglo){
+                console.log(elements);
+            }
+        }
+        
+        fillArray(arreglo);
+        getValues(arreglo);
+    </script>
+</body>
+</html>

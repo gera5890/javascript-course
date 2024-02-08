@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Reduce
+
+        El metodo reduce resume el array a un unico valor aplicando la funcion
+        que se pasa como parametro, es decir la funcion callback.
+        El metodo reduce no modifica el contenido del arreglo.
+        */
+
+        //sumar todos los elementos de un array
+        const montos = [96815,3152,846,31,894];
+
+        const totalMontos = montos.reduce((acumulador,monto) => acumulador + monto);
+        console.log(totalMontos);
+        
+        const articulos = ['papas', 'manzanas','peras','uvas'];
+
+        const addGuion = articulos.reduce((acumulador, articulo) => acumulador + '-' + articulo);
+        console.log(addGuion);
+
+        //suma todos los elementos del array indicando el valor inicial del acumulador
+
+        const addSuma = montos.reduce((acumulador, monto) => acumulador + monto, 100);
+        console.log(addSuma);
+
+        /*
+        ReduceRight
+
+        Lo mismo pero empieza a recorrer nuestro arreglo de la derecha a la izquierda
+        */
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        MAP
+        El metodo map retorna un nuevo array con los resultados de aplicar la funcion que se pasa
+        como parametro a cada elemento del array. El arreglo original no se modifica
+        */
+
+        const arreglo = [1,2,3,4,5,6,7,8,9];
+
+        //Obtener un nuevo arreglo con los elementos elevados al cuadrado
+
+        const cuadrado = arreglo.map(elemento => elemento ** 2);
+        console.log(cuadrado);
+
+        //El mismo problema pero sin usar el metodo map
+
+        let otroCuadrado = []
+        for(elemento of arreglo){
+            otroCuadrado.push(elemento ** 2);
+        }
+
+        console.log(otroCuadrado);
+
+        //Crear un arreglo solo con los nombres de los productos
+
+        const productos = [['manzanas', 120],
+                            ['Naranjas', 150],
+                            ['Kiwis', 220],
+                            ['Uvas', 280],
+                            ['Limones', 80]];
+
+        const productsName = productos.map(name => name[0])
+        console.log(productsName);
+
+        //Crear un aumento con los nombres de los productos y el precio con un aumento del 10%
+
+        const newProducts = productos.map(product => [product[0], product[1] * 1.10]);
+        console.log(newProducts);
+         
+    </script>
+</body>
+</html>

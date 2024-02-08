@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Definir un objeto que represente un alumno con las propiedades: nombre, matricula, nota1, nota2, nota3
+        Inicializar las propiedades con distintos valores.
+        Confeccionar una funcion que muestre todos los datos del alumno, mostrar tambien el promedio de las tres notas y
+        un mensaje que promociono si su promedio es mayor o igual a 7
+        Desarrollar otra funcion que retorne el promedio del alumno.
+        Llamar a la misma desde la priumer funcion
+        */
+
+
+        const alumno  = {
+            nombre: "Gerardo",
+            matricula: 58905292,
+            notaUno: 10,
+            notaDos: 8,
+            notaTres: 9
+        }
+
+        const retornarPromedio = (alumno) => ((alumno.notaUno + alumno.notaDos + alumno.notaTres) / 3);
+
+        const datos = (alumno) => {
+            console.log(alumno.nombre);
+            console.log(alumno.matricula);
+            console.log(alumno.notaUno);
+            console.log(alumno.notaDos);
+            console.log(alumno.notaTres);
+
+            const promedio = retornarPromedio(alumno);
+            console.log('El promedio es: ' + promedio);
+            promedio > 7 ? console.log('Aprobado') : console.log("Reprobado");
+
+        }
+
+        datos(alumno);
+
+    </script>
+</body>
+</html>

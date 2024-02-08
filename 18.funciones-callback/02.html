@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Confeccionar una funcion llamada filtrar que reciba un arreglo y una funcion callback
+        La funcion callback debe recibir un numero como parametro y retornar true or false
+        Crea un nuevo arreglo con los elementos que cumple con la condicion de la funcion callback
+        La funcion filtrar retorna el nuevo arreglo generado
+        */
+
+       
+       function filtrar(arreglo, cb){
+           let arregloNuevo = [];
+           for(elements of arreglo){
+               if(cb(elements)){
+                   arregloNuevo.push(elements);
+                }
+            }
+            return arregloNuevo;
+        }
+        const arreglo = [1,3521,48,5,1,54,2,65,4];
+
+        /**Retornar un arreglo con los elementos pares*/
+
+        const result = filtrar(arreglo,(a) => a %2 == 0);
+        console.log(result);
+
+        /*Retornar todos los elementos que tengan dos digitos*/
+
+        const digits = filtrar(arreglo, (element) => element >= 10 && element <= 99);
+        console.log(digits)
+    </script>
+</body>
+</html>

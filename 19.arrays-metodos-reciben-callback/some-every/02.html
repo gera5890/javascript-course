@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Cree un arreglo con 10 elementos con valores aleatorios comprendidos entre el 0 y 50.
+        Verificar si al menos se genero un valor 15.
+        Verificar luego si todos los valores son menores que 45.
+        */
+
+        const arreglo = [];
+
+        const llenarArreglo = (arreglo) => {
+            for(let x = 0; x < 10; x++){
+                let valor = Math.floor(Math.random(1)*50);
+                arreglo.push(valor);
+            }
+            return arreglo;
+        }
+
+        console.log(llenarArreglo(arreglo));
+
+        const almenos = arreglo.some(elemento => elemento == 15);
+        console.log(almenos);
+
+        const menores = arreglo.every(elemento => elemento < 45);
+        console.log(menores);
+    </script>
+</body>
+</html>

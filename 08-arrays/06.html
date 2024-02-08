@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Realizar un programa que cree dos arreglos numericos por asignacion, sumas las componentes de cada arreglo, 
+        y cada resultado guardarlo en un nuevo arreglo
+        */
+
+        let arregloUno = [10,56,987,51,65];
+        let arregloDos = [1,626,92,2561,654];
+        let result = [];
+
+        for (let x = 0; x < arregloUno.length; x++) {
+            result.push(arregloUno[x] + arregloDos[x])
+        }
+
+        for(let i = 0 ; i < result.length; i++){
+            console.log(result[i]);
+        }
+    </script>
+</body>
+</html>

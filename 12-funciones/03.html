@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Desarrollar un programa con dos funciones.La primera que solicite 
+        el ingreso de un numero y muestra con un alert si el numero es positivo, negativo
+        o nulo.La segunda solicita la carga de dos valores y muestra el producto 
+        de los numeros
+        */
+
+        function tipoDato(){
+            let valor = parseInt(prompt("Ingrese el valor"));
+            if(valor > 0){
+                alert("positivo")
+            }else if(valor < 0){
+                alert("negativo")
+            }else{
+                alert("nulo")
+            }
+        }
+
+        function producto(){
+            let numberOne = parseInt(prompt("Ingrese el valor"));
+            let numberTwo = parseInt(prompt("Ingrese el valor"));
+
+            let producto = numberOne * numberTwo
+            document.write(producto);
+        }
+
+        tipoDato();
+        producto();
+    </script>
+</body>
+</html>

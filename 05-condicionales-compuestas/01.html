@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Operadores
+
+        Asignacion =
+        Matematicos / * - +
+        Relacionales < > <= >= == !=
+        Logicos && || 
+
+        Realizar un programa que solicite 3 numeros enteros distintos
+        y muestre el mayor
+        */
+
+        let numberOne = parseInt(prompt("Ingrese el valor"));
+        let numberTwo = parseInt(prompt("Ingrese el valor"));
+        let numberThree = parseInt(prompt("Ingrese el valor"));
+
+        if(numberOne > numberTwo && numberOne > numberThree){
+            document.write(numberOne);
+        }else if(numberTwo > numberThree){
+            document.write(numberTwo)
+        }else{
+            document.write(numberThree);
+        }
+    </script>
+</body>
+</html>

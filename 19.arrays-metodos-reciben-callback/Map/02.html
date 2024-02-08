@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Se tiene un arreglo con nombres y claves de usuarios
+        */
+
+        const usuarios = [
+            ['Juan', 'sdgfa'],
+            ['Carlos', 'sdgfdsrfbv'],
+            ['Ana', 'sdgerv'],
+            ['Marcos', 'sdgntfgd'],
+            ['Fernando', 'sffeny'],
+        ];
+
+        //crear un arreglo solo con los nombres
+        const names = usuarios.map(name => name[0]);
+        console.log(names);
+
+        //Crear otro arreglo con nombres y la clave con un string vacio
+
+        const anotherArray = usuarios.map(name => [name[0], name[1] = '']);
+        console.log(anotherArray);
+    </script>
+</body>
+</html>

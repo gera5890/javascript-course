@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Crear dos objetos que representen articulos(sus propiedades son codigo, desprecio y precio)
+        Verificar cual es el que tiene un precio mayor y mostrar su nombre, codigo y precio
+        Luego aumentar un 20% cada producto. Mostrar los objetos por la consola
+        */
+
+        const articuloUno = {
+            codigo: 58905292,
+            descripcion: 'Espumoso',
+            precio: 500
+        };
+
+        const articuloDos = {
+            codigo: 58905298,
+            descripcion: 'Aceitoso',
+            precio: 600
+        };
+
+        const mayor = articuloUno.precio > articuloDos.precio ? `${articuloUno.descripcion}, ${articuloUno.codigo}` : `${articuloDos.descripcion} , ${articuloDos.codigo}`;
+        console.log(mayor);
+
+        articuloUno.precio = articuloUno.precio * 1.20;
+        articuloDos.precio = articuloDos.precio * 1.20;
+
+        console.log(articuloUno);
+        console.log(articuloDos);
+
+    </script>
+</body>
+</html>

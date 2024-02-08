@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Define un arreglo vacio
+
+        Crea una funcion para llenar el arreglo con valores 50 aleatorios
+        del 0 al 100.
+        Otra funcion que reciba el arreglo y lo ordene de menor a mayor
+        Otra funcion para imprimir el arreglo
+        */
+
+        function fillArray(arreglo){
+            for(let i = 0; i < 50; i++){
+                const value = Math.floor(Math.random()*100);
+                arreglo.push(value);
+            }
+        }
+
+        function sortArray(arreglo){
+           for(let k = 0; k < arreglo.length; k++){
+            for(let x = 0; x < arreglo.length; x++){
+                let aux = 0;
+                if(arreglo[x+1] < arreglo[x]){
+                    aux = arreglo[x+1];
+                    arreglo[x+1] = arreglo[x];
+                    arreglo[x] = aux
+                }
+            }
+           }
+        }
+
+        function printArray(arreglo){
+            for(let elements of arreglo){
+                document.write(elements)
+                document.write("<br>");
+            }
+        }
+
+        let array = [];
+        fillArray(array);
+        sortArray(array);
+        printArray(array);
+
+        console.log(typeof(array));
+    </script>
+</body>
+</html>

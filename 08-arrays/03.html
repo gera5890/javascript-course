@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Crear un arreglo y almacenar las alturas de 5 personas por asignacion, la altura se carga en centimetros
+        Obtener el promedio de las alturas y luego contar cuantas personas son mas altas que el promedio
+        y cuales son mas bajas
+        */
+
+        let alturas = [170,178,165,167,190];
+
+        let suma = 0;
+        let promedio = 0;
+        let bajas = 0;
+        let altas = 0;
+
+        for (let i = 0; i < alturas.length; i++) {
+            suma = suma + alturas[i];
+        }
+
+        promedio = suma / alturas.length
+
+        for(let x = 0; x < alturas.length; x++){
+            alturas[x] < promedio ? bajas++ : altas++
+        }
+
+        document.write("La altura promedio es: " + promedio);
+        document.write("<br>");
+        document.write(altas);
+        document.write("<br>");
+        document.write(bajas);
+
+    </script>
+</body>
+</html>

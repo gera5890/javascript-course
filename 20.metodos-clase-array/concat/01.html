@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        CONCAT
+        El metodo concat retorna un un nuevo array  que es la concatenacion de los arrays
+        que se pasan como parametros, mas el array que llama a concat
+        */
+
+        const arregloUno = [1,2,3];
+        const arregloDos = [4,5,6];
+        const arregloTres = [7,8,9,10];
+
+        //console.log(arregloUno.concat(arregloDos, arregloTres));
+
+        
+        const primerArray = [[1,2,3], [3,2,1]];
+        const segundoArray = [[4,5,6],[7,8,9]];
+
+        const copiaPrimero = primerArray.slice();
+        const copiaSegundo = segundoArray.slice();
+
+        const unirCopias = copiaPrimero.concat(copiaSegundo);
+        console.log(unirCopias);
+
+        primerArray[0][0] = 55;
+        console.log(unirCopias);
+        console.log(primerArray);
+
+        //Esto modifica el unirCopias hay que tener cuidado y hacerlo con push para no 
+        //modificar el unir copias
+        
+    </script>
+</body>
+</html>

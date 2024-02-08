@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        FOREACH
+
+        foreach ejecuta la funcion que le pasamos como parámtero para cada elemento del array
+        */
+
+        const numeros = [1,2,3,4,5,6,7,8,9];
+
+        //Imprimir cada elemento del arreglo
+
+        numeros.forEach(numero => console.log(numero));
+
+        let suma = 0;
+        numeros.forEach(numero => suma = suma + numero);
+
+        console.log(suma);
+
+        const aumento = numeros.map(numero => numero * 1.10);
+        console.log(aumento);
+
+        const numerillos = [
+            ["algo", 150],
+            ["cosa", 156],
+            ["costo", 86],
+            ["piedra", 59481],
+        ]   
+
+        numerillos.forEach(numero => numero[1] = numero[1] * 50);
+        console.log(numerillos);
+
+
+    </script>
+</body>
+</html>

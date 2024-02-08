@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        se tiene un arreglo con componentes de tipo arreglo que representan un articulo,
+        Se almacena el nombre del producto y su precio.
+        Cargar en otro arreglo los articulos que tienen un precio mayor o igual a 200
+        */
+
+        const productos = [['manzanas', 120],
+                            ['Naranjas', 150],
+                            ['Kiwis', 220],
+                            ['Uvas', 280],
+                            ['Limones', 80]];
+
+        const preciosMayores = productos.filter(elementos => elementos[1] >= 200);
+        console.log(preciosMayores);
+
+        const preciosMenores = productos.filter((elementos) => elementos[1] < 200);
+        console.log(preciosMenores)
+    </script>
+</body>
+</html>

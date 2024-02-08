@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        El metodo find retorna el primer elemento del array que cumpla con la condicion de la funcion que se 
+        pasa como parametro.
+
+        Si no hay un elemento que cumpla la condicion retorna undefined
+        */
+
+        const productos = [['manzanas', 120],
+                            ['Naranjas', 150],
+                            ['Kiwis', 220],
+                            ['Uvas', 280],
+                            ['Limones', 80]];
+
+    
+        const otros = ['algo', 'siempre', 'caca'];
+
+        const algo = otros.find(palabra => palabra == 'algo');
+        console.log(algo);
+
+        //Recuperar la componente que contine Kiwis
+
+        const recuperar = productos.find(producto => producto[0] == 'Kiwis');
+        console.log(recuperar);
+
+
+
+        /*
+        El metodo findIndex retorna el indice del primer elemento del array que cumpla con la condicion
+        la funcion que se pasa como parametro. 
+        En el caso de que ningun elemento del array cumple la condicion, luego el metodo findIndex retorna -1
+        */
+
+        const indice = productos.findIndex(producto => producto[0] == 'Kiwis');
+        console.log(indice);
+
+
+
+
+    </script>
+</body>
+</html>

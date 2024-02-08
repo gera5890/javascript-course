@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Generar un arreglo con 50 numeros enteros aleatorios entre el 1 y 50, no permitir que se repitan
+        Luego buscar en el arreglo el numero 25 y a partir de dicho valor inclusive, eliminar todos los
+        elementos restantes hasta el final del arreglo
+        Imprimir la cantidad de numeros que quedaron en el arreglo y los que se eliminaron
+        */
+
+        let valores = [];
+
+        while(valores.length < 50){
+            const valor = Math.floor(Math.random()*50 + 1);
+            if(valores.includes(valor) == false){
+                valores.push(valor);
+            }
+        };
+
+        console.log(valores.length);
+
+        const encontrar = valores.findIndex(valor => valor == 25);
+        const eliminados = valores.splice(encontrar);
+
+        console.log(encontrar);
+        console.log(eliminados);
+
+
+    </script>
+</body>
+</html>

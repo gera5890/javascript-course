@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Confeccionar un programa que solicite un numero entero positivo
+        de hasta tres cifrasz, mostrar cuantas cifras tiene el numero,
+        si 1, 2, 3
+        */
+
+        let number = parseInt(prompt("Ingrese el valor"));
+
+        if(number >= 0 && number < 10){
+            document.write(1);
+        }else if(number > 9 && number < 100){
+            document.write(2);
+        }else{
+            document.write(3);
+        }
+    </script>
+</body>
+</html>

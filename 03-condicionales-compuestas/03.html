@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Ingresar por teclado 3 notas de un alumno, calcular el promedio
+        Si mayor o igual a 7 mostrar aprobado, de lo contrario reprobado
+        */
+
+        let notaUno = parseInt(prompt("Ingrese el valor"));
+        let notaDos = parseInt(prompt("Ingrese segundo valor"));
+        let notaTres = parseInt(prompt("Ingrese tercer valor"));
+
+        const promedio = (notaUno + notaDos + notaTres) / 3;
+
+        promedio < 7 ? document.write("Reprobado") : document.write("Aprobado");
+    </script>
+</body>
+</html>

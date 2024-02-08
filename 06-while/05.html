@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Escribir un programa que solicite ingresar 10 notas de alumnos y nos informe
+        y nos informe cuantos tienen notas mayores o iguales a 7 y cuantos menores
+        */
+
+        let x = 1;
+        let mayores = 0;
+        let menores = 0;
+
+        while(x <= 10){
+            let notas = parseInt(prompt("Ingrese la nota: "));
+            notas >= 10 ? mayores++ : menores++
+            x++
+        }   
+
+        document.write(mayores);
+        document.write("<br>");
+        document.write(menores);
+    </script>
+</body>
+</html>

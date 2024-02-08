@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Ingresar valores para x y y (Coordenadas), distinto de 0,
+        posteriormente imprimir en que cuadrantre se encuentra dicho punto
+        */
+
+        let x = parseInt(prompt("Ingrese el valor de x"));
+        let y = parseInt(prompt("Ingrese el valor de y"));
+
+        if(x > 0 && y > 0){
+            document.write("Primer cuadrante");
+        }else if(x < 0 && y > 0){
+            document.write("Segundo cuadrante");
+        }else if(x < 0 && y < 0){
+            document.write("Tercer cuadrante");
+        }else if(x > 0 && y < 0){
+            document.write("Cuarto cuadrante")
+        }
+    </script>
+</body>
+</html>

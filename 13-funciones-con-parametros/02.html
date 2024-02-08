@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Confeccionar una funcion que reciba tres enteros y nos muestre
+        el mayor de ellos. La carga de los valores hacerlo por teclado en otra
+        funcion
+        */
+
+        function carga(){
+            const numberOne = parseInt(prompt("Ingrese el valor: "));
+            const numberTwo = parseInt(prompt("Ingrese el valor: "));
+            const numberThree = parseInt(prompt("Ingrese el valor: "));
+            mostrarMayor(numberOne, numberTwo, numberThree);
+        }
+
+        function mostrarMayor(n1, n2, n3){
+            if(n1 > n2 && n1 > n3){
+                console.log(n1);
+            }else if(n2 > n3){
+                console.log(n2);
+            }else{
+                console.log(n3)
+            }
+        }
+
+        carga();
+    </script>
+</body>
+</html>

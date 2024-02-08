@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Una empresa tiene dos turnos(matutino y vespertino) en los que trabajan 8 empleados
+        3 en la manana y 5 en la tarde
+        Confeccionar un programa que permita almacenar los sueldos de los empleados agrupados por turno
+        Imprimir los sueldos y el total de sueldos por turno
+        */
+
+        let matutino = [];
+        let vespertino = [];
+        let totalMatutino = 0;
+        let totalVespertino = 0;
+
+        for (let i = 0; i < 3; i++) {
+            let sueldo = parseInt(prompt("Ingrese el sueldo: "));
+            matutino.push(sueldo);
+            document.write(matutino[i]);
+            document.write("<br>");
+
+        }
+        document.write("<br>");
+
+
+        for (let x = 0; x < 5; x++) {
+            let sueldo = parseInt(prompt("Ingrese el sueldo"));
+            vespertino.push(sueldo);
+            document.write(vespertino[x]);
+            document.write("<br>");
+        }
+        document.write("<br>");
+
+
+        for (let f = 0; f < matutino.length; f++) {
+            totalMatutino = totalMatutino + matutino[f];
+        }
+
+        for (let j = 0; j < vespertino.length; j++) {
+            totalVespertino = totalVespertino + vespertino[j];
+        }
+
+        document.write(totalMatutino);
+        document.write("<br>");
+        document.write(totalVespertino);
+        document.write("<br>");
+
+
+    </script>
+</body>
+</html>

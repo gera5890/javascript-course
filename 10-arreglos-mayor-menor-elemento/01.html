@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Realizar la busqueda de el elemento mayor y la posicion del mismo
+        */
+
+        let elementos = [123,2056,56,65,16,151,1588];
+        let mayor = [0];
+        let posicion = 0;
+
+        for(let x = 1; x < elementos.length; x++){
+            if(elementos[x] > mayor){
+                mayor = elementos[x];
+                posicion = x;
+            }
+        }
+
+        console.log(mayor);
+        console.log(posicion);
+    </script>
+</body>
+</html>

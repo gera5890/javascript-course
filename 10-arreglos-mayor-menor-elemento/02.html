@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Cargar un arreglo de n elementos, el operador decide cuantos elementos tendra ese arreglo
+        Imrpimir el menor y un mensaje si se repite dentro del arreglo
+        */
+
+        let nElementos = parseInt(prompt("Ingrese el numero de elementos"));
+        let elementos = [];
+        let count = 0;
+
+        for(let x = 0; x < nElementos; x++){
+            let valor = parseInt(prompt("Ingrese el valor del elemento: "));
+            elementos.push(valor);
+        }
+
+        let menor = elementos[0];
+        for(let i = 1; i < elementos.length; i++){
+            if(elementos[i] < menor){
+                menor = elementos[i];
+            }
+        }
+        console.log(menor);
+
+        for(let y = 0; y < elementos.length; y++){
+            elementos[y] == menor ? count++ : '';
+        }
+
+        console.log(elementos);
+        console.log(count);
+
+
+    </script>
+</body>
+</html>

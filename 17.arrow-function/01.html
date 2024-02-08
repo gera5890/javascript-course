@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Son una manera alternativa u concisa para implementar las funciones de expresion
+        clasicas de JS
+        */
+
+        const cuadrado = (valor) => {
+            return valor ** 2;
+        }
+
+        console.log(cuadrado(4));
+
+        /**Cuando solo hay un parametro se pueden quitar los parentesis, y ademas si solo retorna un valor se puede
+         * quitar los corchetes
+         * **/
+
+         const cubo = valor => valor ** 3;
+         console.log(cubo(5));
+
+         /*Retornar la suma de dops numeros*/
+
+         const suma = (a,b) => a + b
+         console.log(suma(5,6));
+
+         /*Retornar el string Hola mundo*/
+
+         const palabra = () => "Hola mundo";
+         console.log(palabra());
+
+
+         /*Sumar todos los numero que pasemos a una funcion*/
+
+         const sumarElementos = (...valores) => {
+            let suma = 0;
+            for(elements of valores){
+                suma = suma + elements;
+            }
+            return suma;
+         }
+
+         console.log(sumarElementos(1,2,3,4,5,6,7,8,9));
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        La sintaxis del parametro rest nos permite recibir una cantidad de variables de datos que se
+        almacenan en un array, debemos anteceder tres puntos antes del nombre del parametro para indicar
+        que es un parametro rest. El parametro rest debe ser el ultimo.
+        */
+
+        function prueba(a, b, ...rest){
+            console.log(a);
+            console.log(b);
+            console.log(rest);
+
+        }
+
+        prueba(1,2,3,4,5,6,7,8,9)
+    </script>
+</body>
+</html>

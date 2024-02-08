@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Escribir un programa que lea 10 notas e informe cuantos tienen mayor o igual a 7 y menor que 7
+        */
+
+        let mayores = 0;
+        let menores = 0;
+
+        for (let x = 1; x <= 10; x++) {
+            let valorNota = parseInt(prompt("Ingrese el valor de la nota"));
+            valorNota >= 7 ? mayores++ : menores++
+        }
+
+        document.write(mayores);
+        document.write("<br>");
+        document.write(menores);
+
+    </script>
+</body>
+</html>

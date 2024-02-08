@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        FUNCIONES CALLBACK
+        Es aquella que es pasada como argumento y recibida como parametro por otra funcion, 
+        dentro del algoritam esa funcion procedera a llamar a la funcion callback cuando se necesite
+        */
+
+        function sumar(a,b){
+            return a + b;
+        }
+
+        function multiplicar(a,b){
+            return a*b;
+        }
+
+        function operar(a, b, call){
+            const resultado = call(a,b);
+            return resultado;
+        }
+
+        console.log(operar(10, 5, sumar));
+        console.log(operar(10, 5, multiplicar));
+
+        /*Podemos pasar directamente una funcion anonima*/
+
+        console.log(operar(10, 6, (a , b) => a / b));
+    </script>
+</body>
+</html>

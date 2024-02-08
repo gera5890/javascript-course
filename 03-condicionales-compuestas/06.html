@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            Ingresar dos valores enteros, hacer la division del primero
+            con respecto al segundo, mostrar un mensaje en el caso de que el
+            segundo valor sea igual a cero
+        */
+
+        let numberOne = parseInt(prompt("Ingrese el primer valor"));
+        let numberTwo = parseInt(prompt("Ingrese el segundo valor"));
+
+        if(numberTwo != 0){
+            let division = numberOne / numberTwo;
+            document.write("El resultado es: " + division);
+        }else{
+            document.write("No es posible la operacion");
+        }
+    </script>
+</body>
+</html>

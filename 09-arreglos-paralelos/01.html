@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Desarrollar un programa que almacene en dos arreglos, en uno los nombres y en otro las edades respectivas
+        Imprimir todos los datos y posteriormente imprimir los nombres de las personas mayores de edad
+        */
+
+        let nombres = ['gera','jess','gus','anuar', 'max'];
+        let edades = [28, 29, 34, 6, 9];
+        
+
+        for(let i = 0; i < nombres.length; i++){
+            document.write(nombres[i]);
+            document.write(" - ");
+            document.write(edades[i]);
+            document.write("<br>");
+            
+            edades[i] >= 18 ? console.log(nombres[i]) : '';
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Crear un arreglo de n elementos, imprimir el arreglo,
+        obtener el elemento mayor de el arreglo,
+        Generar otros dos arreglos, en uno almacenar los elementos menores a10 y en otro los 
+        mayores o iguales a 10
+        */
+
+        let nElementos = parseInt(prompt("Ingrese el numero de elementos del arreglo: "));
+        let elementos = [];
+
+        for (let x = 0; x < nElementos; x++) {
+            let elemento = parseInt(prompt("Digite el valor"));
+            elementos.push(elemento);
+        }
+
+        for(let elemento of elementos){
+            console.log(elemento);
+        }       
+        console.log(elementos);
+
+        let mayor = elementos[0];
+        for (let index = 0; index < elementos.length; index++) {
+            if(elementos[index] > mayor){
+                mayor = elementos[index];
+            }
+        }
+        console.log(mayor)
+
+        let menores = [];
+        let mayores = [];
+
+        for(let elemento of elementos){
+            elemento > 10 ? mayores.push(elemento) : menores.push(elemento);
+        }
+
+        console.log(menores);
+        console.log(mayores);
+    </script>
+</body>
+</html>

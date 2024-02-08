@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Realizar un script que lea los lados de n triangulos e informar de cada uno de ellos
+        que tipo de triangulo es, equilatero, escaleno, isoceles
+        */
+
+        let escaleno = 0;
+        let isoceles = 0;
+        let equilatero = 0;
+        let nTriangulos = parseInt(prompt("Digite cuantos triangulos quiere"));
+
+        for (let index = 1; index <= nTriangulos ; index++) {
+            let a = parseInt(prompt("Ingrese el lado a"));
+            let b = parseInt(prompt("Ingrese el lado a"));
+            let c = parseInt(prompt("Ingrese el lado a"));
+
+            if(a == b && a == c){
+                document.write("Es equilatero");
+                equilatero++
+            }else if(a != b && a != c && b != c){
+                document.write("Es escaleno");
+                escaleno++
+            }else{
+                document.write("Es isoceles")
+                isoceles++
+            }
+        }
+
+        document.write(escaleno);
+        document.write(isoceles);
+        document.write(equilatero);
+    </script>
+</body>
+</html>

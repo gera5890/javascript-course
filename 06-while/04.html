@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Confeccionar un programa que pida la cantidad de piezas a fabricar (n)
+        luego ingrese la longitud de la pieza, sabiendo que las piezas que sirven miden entre 1.20 y 1.30
+        imprimir cuantas piezas son las que sirven
+        */
+
+        let x = 1;
+        let n = parseInt(prompt("Ingrese la cantidad de piezas"));
+        let cantidad  = 0;
+
+        while(x <= n){
+            let longitud = parseFloat(prompt("Ingrese la longitud de la pieza"));
+            if(longitud >= 1.20 && longitud <= 1.30){
+                cantidad++
+            }
+            x++
+        }
+    </script>
+</body>
+</html>

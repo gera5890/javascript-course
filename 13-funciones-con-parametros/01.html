@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Confeccionar una aplicaicon que muestre una presentacion en pantalla
+        del programa.Solicite la carga de dos valores y nos muestre la suma.
+        Mostrar finalmente la despedida del programa
+        */
+
+        function mostrarMensaje(mensaje){
+            console.log(mensaje);
+        }
+
+        function cargaValores(){
+            const numberOne = parseInt(prompt("Digite el valor: "));
+            const numberTwo = parseInt(prompt("Digite el valor: "));
+            const suma = numberOne + numberTwo;
+            console.log(suma);
+        }
+
+        mostrarMensaje("Bienvenido al programa");
+        cargaValores();
+        mostrarMensaje("Gracias por usar el programa");
+
+    </script>
+</body>
+</html>

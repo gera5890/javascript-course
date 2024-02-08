@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Realizr un programa que nos permita agregar n cantidad de valores
+        Indicar el numero de numeros que son pares e impares
+        */
+
+        let nValores = parseInt(prompt("Ingresar el valor"))
+        let count = 1;
+        let pares = 0;
+        let impares = 0;
+
+        while(count <= nValores){
+            let valor = parseInt(prompt("Ingrese el valor"))
+            valor % 2 == 0 ? pares++ : impares ++;
+            count++;
+        }
+
+        document.write(pares);
+        document.write(impares);
+    </script>
+</body>
+</html>

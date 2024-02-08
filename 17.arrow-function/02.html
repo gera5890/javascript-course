@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Confeccionar una funcion flecha que reciba un arreglo como parametro y le agrege un elemtno al final con 
+        la suma de todos sus elementos
+        */
+
+        const arreglo = [1,2,3,4,5,6];
+
+        const sumarArreglo = (arreglo) => {
+            let suma = 0
+            for(elements of arreglo){
+                suma = suma + elements;
+            }
+            arreglo.push(suma);
+            return arreglo
+        }
+
+        console.log(sumarArreglo(arreglo));
+    </script>
+</body>
+</html>

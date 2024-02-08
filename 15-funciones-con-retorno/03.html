@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Confeccionar una funcion que retorne un arreglo con 5 enteros
+        Luego implementar otras dos funciones que reciban el arreglo y nos retorne una de ellas
+        la suma y la otra el mayor
+        */
+
+        function returnArray(){
+            let arreglo = [];
+            for(let index = 0; index < 5; index++){
+                let valor = parseInt(prompt("Ingrese el valor"));
+                arreglo.push(valor);
+            }
+            return arreglo;
+        }
+
+        function biggestElement(arreglo){
+            let aux = 0;
+            for(let x = 0; x < arreglo.length; x++){
+                for(let i = 0; i < arreglo.length; i++){
+                    if(arreglo[i] < arreglo[i+1]){
+                        aux = arreglo[i];
+                        arreglo[i] = arreglo[i+1]
+                        arreglo[i+1] = aux;
+                    }
+                }
+            }
+            return arreglo[0];
+        }
+
+        function addArray(){
+            let suma = 0;
+            for(elementos of arreglo){
+                suma = suma + elementos;
+            }
+            return suma;
+        }
+
+        function printArray(arreglo){
+            for (const iterator of arreglo) {
+                document.write(`${iterator} -`);
+            }
+        document.write("<br>");
+
+        }
+
+
+        const arreglo = returnArray();
+        printArray(arreglo);
+        let suma = addArray(arreglo);
+        let bigtElement = biggestElement(arreglo);
+
+        document.write(suma);
+        document.write("<br>");
+        document.write(bigtElement);
+
+    </script>
+</body>
+</html>

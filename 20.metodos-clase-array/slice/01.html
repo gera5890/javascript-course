@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        SLICE
+
+        El metodo slice sirve para hacer una copia de un arreglo, sin modificar el primero
+        */
+
+        const arregloUno = [1,2,3,4,5,6];
+        console.log(arregloUno);
+        const arregloDos = arregloUno.slice();
+        arregloDos[0]= 1250;
+        console.log(arregloDos);
+
+        //slice(inicio)
+
+        const desde = arregloUno.slice(2);
+        console.log(desde);
+
+        //slice(inicio, fin) regresa una copia desde inicio hasta el indice fin(no incluido);
+
+        const desdeHasta = arregloUno.slice(2,4);
+        console.log(desdeHasta);
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Realizar la carga por teclado de un arreglo con n numeros
+        Mostrar luego el arreglo por la consola
+        */
+
+        let nombres = [];
+        let nElementos = 6;
+
+        for (let x = 0; x < nElementos; x++) {
+            let nombre = prompt("Digite el valor del elemento: " + x)
+            nombres.push(nombre)
+        }
+
+        for(let y = 0; y < nombres.length; y++){
+            console.log(nombres[y]);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Cargar dos numeros enteros, si el primero es mayor al segundo,
+        imprimir la suma y resta, en caso contrario el producto y la division
+        del primero con el segundo
+        */
+
+        let numberOne = parseInt(prompt("Ingrese el primer valor"));
+        let numberTwo = parseInt(prompt("Ingrese el segundo valor"));
+
+        if(numberOne > numberTwo){
+            let suma = numberOne + numberTwo;
+            let resta = numberOne - numberTwo;
+            document.write(`La suma es: ${suma} y la resta es: ${resta}`);
+        }else{
+            let producto = numberOne * numberTwo;
+            let division = numberOne / numberTwo;
+            document.write(`El producto es: ${producto} y la division es: ${division}`);
+        }
+    </script>
+</body>
+</html>

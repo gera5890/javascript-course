@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Desarrollar un programa que permita ingresar el nombre de un empleado y su sueldo
+        actual.Almacenar cada dato en un arreglo en las mismas posiciones.
+        Ingresar posteriormente el nombre de un empleado y en el caso que exista en el
+        arreglo de nombres proceder a mostrar su sueldo, de lo contrario mostrar un mensaje de que no existe
+        */
+
+        let empleados = ['gerardo','andres','jorge','luis'];
+        let sueldos  = [18000,5000,51959,6315];
+
+        let empleado = prompt("Ingrese el nombre del empleado: ");
+        let bandera = false
+
+        for (let x = 0; x < empleados.length; x++) {
+            if(empleados[x] == empleado){
+                console.log(sueldos[x]);
+                bandera = true
+                break;
+            }
+        }
+
+        bandera == false ? console.log("No existe el empleado") : '';
+    </script>
+</body>
+</html>

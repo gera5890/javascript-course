@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Desarrollar una funcion que reciba una palabra en minusculas
+        y nos muestre la cantidad de vocales. llamar la funcion 3 veces
+        con diferentes strings
+        */
+
+        function cantidadVocales(palabra){
+            let count = 0 ;
+            for(letras of palabra){
+                if(letras == "a" || letras == "e" || letras == "i" || letras == "o" || letras == "u"){
+                    count++
+                }
+            }
+            console.log(count);
+        }
+
+        for(let index = 0; index < 3 ; index++){
+            let frase = prompt("Ingrese la palabra")
+            cantidadVocales(frase)
+        }
+    </script>
+</body>
+</html>

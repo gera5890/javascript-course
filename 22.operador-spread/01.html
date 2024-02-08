@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        OPERADOR SPREAD
+        consiste en agregar tres puntos seguidos previo al arreglo
+        lo queb hace es sacar los elementos de un arreglo y tratarlos como variables
+        que recibe una funcion
+        */
+
+        const suma = (a,b,c) => {
+            return a+b+c;
+        }
+
+        const arreglo = [1,2,3];
+
+        console.log(suma(...arreglo));
+
+        /*
+        Sirve tambien cuando necesitamos copiar un arreglo
+        */
+
+        const copiaArreglo = [...arreglo];
+        console.log(copiaArreglo);
+
+        /*
+        Sirve para concatenar ademas arreglos
+        */
+
+        const arregloUno = [1,2,3];
+        const arregloDos = [4,5,6];
+        const arregloTres = [7,8,9];
+
+        const concatenacion = [...arregloUno, ...arregloDos, ...arregloTres];
+        console.log(concatenacion);
+
+
+        /*
+        Tambien podemos utilizar el operador spread junto con la funcion Math
+        para saber cual es el valor mas grande o menor dentro de ese arreglo
+        */
+
+        const precios = [321,654,4798,15,894,64,153];
+        const mayoir = Math.max(...precios);
+
+        const menor = Math.min(...precios);
+        console.log(mayoir);
+        console.log(menor);
+    </script>
+</body>
+</html>

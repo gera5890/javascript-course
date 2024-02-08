@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Definir dos arreglos vacios. Elaborar una unica funcion que cargue
+        un vector con 5 elementos, llamar a la funcion dos veces pasando
+        de formasucesiva el verctor 1 y dos.
+        Imprimir los dos arreglos haciendo una unica funcion llamandola dos veces        
+        */
+
+        function fillArray(arreglo){
+           for(let index = 0; index < 5; index++){
+            let value = parseInt(prompt("Ingrese valor: "));
+            arreglo.push(value);
+           }
+        }
+
+        function printArray(arreglo){
+            for(let elements of arreglo){
+                console.log(elements);
+            }
+        }
+
+        let arrayOne = [];
+        let arrayTwo = [];
+
+
+        fillArray(arrayOne);
+        fillArray(arrayTwo);
+        printArray(arrayOne);
+        printArray(arrayTwo);
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Muestre un mensaje mediante la funcion alert desde una funcion.
+        Solicite la carga de dos valores enteros y nos muestre la suma.
+        Mostrar un mensaje de despedida
+        */
+
+        function presentacion(){
+            alert("Bienvenido al tema de funciones")
+        }
+
+        function suma(){
+            let numberOne = parseInt(prompt("Ingrese el valor"));
+            let numberTwo = parseInt(prompt("Ingrese el valor"));
+            let suma = numberOne + numberTwo;
+            document.write(suma);
+            document.write("<br>");
+        }
+
+        function despedida(){
+            document.write("Hasta luego");
+        }
+
+        presentacion();
+        suma();
+        despedida();
+    </script>
+</body>
+</html>

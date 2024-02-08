@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Podemos pasar como parametros a una funcion un objeto.Al igual que con los array lo que llega
+        a la funcion es la referencia del objeto.
+        Luego si modificamos el objeto, se modifica el objeto propiamente dicho
+        */
+
+        const articuloUno = {
+            codigo: 1,
+            descripcion: "Papas",
+            precio: 10
+        };
+
+        const articuloDos = {
+            codigo: 2,
+            descripcion: "Manzanas",
+            precio: 20
+        };
+
+        /*
+        Confeccionar dos funciones, una que muestre todos los atributos del articulo y otra que aumente 20% su precio
+        */
+
+        const imprimir = (articulo) => {
+           return `${articulo.codigo}, ${articulo.descripcion}, ${articulo.precio}`;
+        };
+
+        const aumento = (articulo) => {
+            return articulo.precio = articulo.precio * 1.20
+        }
+
+        console.log(imprimir(articuloUno));
+        console.log(aumento(articuloUno));
+        console.log(imprimir(articuloDos));
+        console.log(aumento(articuloDos));
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        SOME
+
+        El metod some significa alguna, retorna true si alguno de los elementos de un array
+        cumple con la condicion que se pasa como parametro
+        */
+
+        const arreglo = [21,486,897,315,24];
+        //Verificar si al menos hay un elemento par en el arreglo
+
+        const alguno  = arreglo.some(elemento => elemento % 2 == 0);
+        console.log(alguno);
+
+        /*
+        Metodo EVERY significa todos, retorna true si todos los elementos de un array cumplen 
+        con la condicion que se pasa como parametro
+        */
+
+        const productos = [
+            ['manzanas', 120],
+            ['narajnas', 150],
+            ['kiwis', 280],
+            ['peras', 240]
+        ];
+
+        const algunos = productos.every(producto => producto[1] > 100);
+        console.log(algunos);
+        
+        //Verificar si todos los productos tienen  un precio mayor a 100
+    </script>
+</body>
+</html>

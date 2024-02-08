@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Confeccionar una funcion en la que enviemos dos valores numericos y nos retorne el mayor de ellos
+        */
+
+        function mayor(numberOne, numberTwo){
+            return numberOne > numberTwo ? numberOne : numberTwo;
+        }
+
+        let numberOne = parseInt(prompt("Ingrese el valor"));
+        let numberTwo = parseInt(prompt("Ingrese el valor"));
+        const biggest = mayor(numberOne, numberTwo);
+        console.log(biggest);
+    </script>
+</body>
+</html>

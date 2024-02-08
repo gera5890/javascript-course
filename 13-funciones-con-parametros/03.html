@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Realizar un programa que permita cargar un lado de un cuadrado
+        Luego preguntar si quiere calcular su perimetro o superficie
+        y mostrar el resultado 
+        */
+
+        function mostrarPerimetro(valor){
+            const perimetro  =  valor * 4;
+            console.log(perimetro);
+        }
+
+        function mostrarArea(valor){
+            const superficie = valor * valor
+            console.log(superficie);
+        }
+
+        function cargarDato(){
+            const value = parseFloat(prompt("Ingrese el valor del lado"));
+            const respuesta = prompt("Desea calcular el perimetro o superficie")
+            if(respuesta == "perimetro"){
+                mostrarPerimetro(value);
+            }else if(respuesta == "superficie"){
+                mostrarArea(value);
+            }
+        }
+
+        cargarDato();
+    </script>
+</body>
+</html>

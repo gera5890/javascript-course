@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Escribir un programa que lea 10 numeros enteros y luego muestre cuantos valores ingresados
+        fueron multiples de 3 y cuantos de 5
+        */
+
+        let tres = 0;
+        let cinco = 0;
+
+        for(let x = 1 ; x <= 10; x++){
+
+            let valor = parseInt(prompt("Ingrese el valor"));
+            if(valor % 3 == 0){
+                tres++
+            }
+
+            if(valor % 5 == 0){
+                cinco++
+            }
+        }
+
+        document.write(tres);
+        document.write("<br>");
+        document.write(cinco);
+    </script>
+</body>
+</html>

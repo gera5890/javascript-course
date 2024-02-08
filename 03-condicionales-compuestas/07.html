@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Ingresar el precio de un producto, si tiene vlor mayor o igual a 250
+        aplicar el 10% de descuento, de tener un precio menor aplicar el 5%
+        */
+
+        let precio = parseFloat(prompt("Ingresa el costo del producto"));
+        if(precio >= 250){
+            const descuento = precio * (10/100);
+            let total = precio - descuento;
+            document.write("El total es: " + total);
+        }else{
+            const descuento = precio * (5/100);
+            let total = precio - descuento;
+            document.write("El total es: " + total);
+        }
+    </script>
+</body>
+</html>

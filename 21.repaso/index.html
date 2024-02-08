@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const precios = [321,6541,8794,6,189,17,87];
+
+        //utilizar todos las funciones callback vistas y los metodos de la clase array
+
+        const aumento = precios.map(precio => precio * 1.10);
+        console.log(aumento);
+
+        const alguno = precios.some(precio => precio % 2 == 0);
+        console.log(alguno);
+
+        const filtrar = precios.filter(precio => precio % 2 == 0);
+        console.log(filtrar);
+
+        const encontrar = precios.find(precio => precio == 6 );
+        console.log(encontrar);
+
+        const encontrarIndice = precios.findIndex(precio => precio == 6);
+        console.log(encontrarIndice);
+
+        const totalNeto = aumento.reduce((acumulado, precio) => acumulado + precio);
+        console.log(totalNeto);
+
+        const totalBruto = precios.reduceRight((acumulado, precio) => acumulado + precio);
+        console.log(totalBruto);
+
+        precios.pop();
+        console.log(precios);
+
+        precios.push(95,9854,321984);
+        console.log(precios);
+
+        precios.unshift(1,2,3);
+        console.log(precios);
+
+        precios.shift();
+        precios.shift();
+        precios.shift();
+
+        console.log(precios);
+
+        
+
+    </script>
+</body>
+</html>

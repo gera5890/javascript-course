@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        FLAT
+
+        Lo que hace es aplanar los arreglos, es decir, si es un array de arreglos
+        lo podemos hacer un simple array
+        */
+
+        const arregloDeArreglos = [[1,2,3],[4,5,6],[7,8,9]];
+        console.log(arregloDeArreglos);
+
+        const aplanado = arregloDeArreglos.flat();
+        console.log(aplanado);
+        console.log(arregloDeArreglos);
+
+        /*
+        Si tenemos solo una componente del arreglo como arreglo, indicamos cuantas veces se aplana
+        por defecto tiene el 1, si ponemos dos quiere decir que nos va a crear arreglos dentro de un arreglo
+        */
+        const prueba = [1,2,3,[8,9],4,5,6];
+        const aplanar = prueba.flat(1);
+        console.log(aplanar);
+
+       
+
+    </script>
+</body>
+</html>

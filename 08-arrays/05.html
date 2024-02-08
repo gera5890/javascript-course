@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Desarrollar un programa que permita ingresar un arreglo de 8 elementos enteros por teclado
+        luego calcular e informar:
+        El valor acumulado de todos los arreglos
+        El valor acumulado de todos los elementos del arreglo que sean mayores a 36
+        */
+
+        let elementos = [];
+        let acumulado = 0;
+        let mayores = 0;
+
+        for (let x = 0; x < 8; x++) {
+            let elemento = parseInt(prompt("Ingrese el valordel elemento en la posicion " + elementos[x]));
+            elementos.push(elemento);
+            acumulado = acumulado + elementos[x];
+            
+            elementos[x] > 36 ? mayores++ : '';
+        }
+        console.log(acumulado);
+        console.log(mayores);
+    </script>
+</body>
+</html>

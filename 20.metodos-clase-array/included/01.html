@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Includes(elemento, [desde])
+
+        Retorna true si el elemento se encuentra en el array. 
+        El segundo parametro es opcional y es el indice de inicio donde debemos buscar
+        */
+
+        const colores = ['rojo','azul','morado','rosa','verde'];
+        if(colores.includes('rojo')){
+            console.log("El arreglo contiene el color rojo");
+        }
+
+        const numeros = [1,2,3,4,5,6,7,8,9];
+        if(numeros.includes(3)){
+            console.log('Arreglo contiene el numero 3');
+        }
+
+        if(numeros.includes(1,0)){
+            console.log('Arreglo contiene el uno en la posicion 0');
+        }
+
+        /*
+        Crear un arreglo de 50 elementos que represente un bolillero de la loteria (valores entre 1 y 50),
+        La logica a emplear es generar un valor aleatorio comprendido entre el 1 y el 50.
+        Verificar si dicho numero se encuentra contenido en el arreglo, en caso negativo agregarlo con el metodo push.
+        Repetir el proceso hasta que el bolillero tenga 50 elementos.
+        Imprimir el bolillero
+        Extraer e imprimir las dos primeras bolillas que coinciden con las posiciones 0 y 1
+        Controlar que el bolillero haya quedado con 48 bolillas
+        */
+
+        const bolillero = [];
+        while(bolillero.length < 50){
+            const valor = Math.floor(Math.random(1)*50);
+            if(!bolillero.includes(valor)){
+                bolillero.push(valor);
+            }
+        }
+
+        for (const numero of bolillero) {
+           document.write(numero);
+           document.write("<br>"); 
+        }
+
+        console.log(bolillero);
+        console.log(bolillero.shift());
+        console.log(bolillero.shift());
+        console.log(bolillero.length);
+        console.log(bolillero);
+        
+    </script>
+</body>
+</html>
